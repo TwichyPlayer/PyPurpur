@@ -1,0 +1,30 @@
+# ══════════════════════════════════════════════════════════════
+#  PyPurpur — config.txt
+#  Human-readable configuration. Lines starting with # are comments.
+#  Changes take effect next time the bot starts.
+# ══════════════════════════════════════════════════════════════
+
+# ── Minecraft ──────────────────────────────────────────────────
+# Set automatically when you pick a version via /start.
+# Override manually here if needed.
+MC_VERSION=1.21.10
+
+# ── JVM Memory (megabytes) ─────────────────────────────────────
+# 4 GB machine → 1 GB reserved for OS → 3 GB max heap
+MIN_RAM=512
+MAX_RAM=3072
+
+# ── Plugin Auto-Updater ────────────────────────────────────────
+# true  = auto-download plugin updates when server starts
+# false = only print a notification in the Python console
+AUTO_UPDATE_PLUGINS=true
+
+# ── Update Notification Channel ───────────────────────────────
+# Discord channel ID to send plugin update notifications.
+# Leave blank to only log to the Python console.
+UPDATE_CHANNEL_ID=
+
+# ── Ephemeral Responses ────────────────────────────────────────
+# true  = command responses are only visible to you (private)
+# false = command responses are visible to everyone in the channel
+EPHEMERAL_RESPONSES=true

@@ -1,0 +1,20 @@
+# PyPurpur — Python Dependencies
+# Install with:  pip install -r requirements.txt
+#
+# ── Why git discord.py? ───────────────────────────────────────────────────────
+# Components V2 classes (Container, TextDisplay, Separator, Section, Thumbnail)
+# and the IS_COMPONENTS_V2 MessageFlags attribute are NOT in any PyPI release
+# as of 2025. They exist only in the discord.py master branch.
+# The raw flag value (1<<15) works in any version; the UI classes require git.
+# ─────────────────────────────────────────────────────────────────────────────
+git+https://github.com/Rapptz/discord.py.git@master
+
+# ── Async HTTP (Modrinth API, Purpur download, Adoptium Java download) ────────
+# Pin to 3.9.x — version 3.10+ has breaking ClientSession changes
+aiohttp==3.9.5
+
+# ── Async file I/O (stream large JDK/jar downloads without blocking the loop) ─
+aiofiles==23.2.1
+
+# ── .env loader ───────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
